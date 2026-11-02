@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="RetroPlay Web - catálogo de homebrews e conteúdos autorizados para PS4.">
+  <title>RetroPlay Web | PS4</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="RetroPlay início">
+      <span class="brand-mark">RP</span>
+      <span>RETRO<span class="brand-accent">PLAY</span><small>PS4 WEB STORE</small></span>
+    </a>
+    <div class="top-status"><span class="status-dot"></span> CATÁLOGO ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SUA CENTRAL DE CONTEÚDO</span>
+        <h1>Jogue. Explore.<br><span>Reviva.</span></h1>
+        <p>Encontre homebrews, aplicativos e conteúdos autorizados em um só lugar.</p>
+        <a class="primary-button" href="#catalogo">EXPLORAR CATÁLOGO <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-large"></div><div class="orb orb-small"></div>
+        <div class="controller">✣</div>
+        <div class="hero-label">RETRO<br>GAMING<br><b>REIMAGINED</b></div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><span class="eyebrow">BIBLIOTECA DIGITAL</span><h2>Explorar catálogo</h2></div>
+        <div class="heading-actions">
+          <button class="refresh-button" id="refreshCatalog" type="button">↻ ATUALIZAR</button>
+          <span class="item-count" id="itemCount">Carregando...</span>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar por nome..." autocomplete="off"></label>
+        <div class="toolbar-right">
+          <div class="filters" id="filters" aria-label="Filtrar categoria">
+            <button class="filter active" data-category="Todos" type="button">Todos</button>
+            <button class="filter" data-category="Homebrew" type="button">Homebrew</button>
+            <button class="filter" data-category="Aplicativos" type="button">Aplicativos</button>
+            <button class="filter" data-category="Utilitários" type="button">Utilitários</button>
+          </div>
+          <button class="filter favorites-filter" id="favoritesOnly" type="button" aria-pressed="false">♡ FAVORITOS</button>
+          <select id="sortSelect" class="sort-select" aria-label="Ordenar catálogo">
+            <option value="name">Nome A–Z</option>
+            <option value="newest">Mais recentes</option>
+            <option value="size">Tamanho</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="notice"><span>ⓘ</span> Baixe somente arquivos próprios ou cuja distribuição você tenha autorização. O navegador não instala PKG nem substitui o instalador do console.</div>
+      <div id="catalogStatus" class="catalog-status" role="status"></div>
+      <div id="gameGrid" class="game-grid" aria-live="polite">
+        <div class="loading-card">Carregando catálogo...</div>
+      </div>
+      <div id="emptyState" class="empty-state" hidden>Nenhum item encontrado. Tente outra busca ou categoria.</div>
+      <p class="controller-hint">CONTROLE: direcional para navegar · X / Enter para selecionar · O / Esc para voltar</p>
+    </section>
+  </main>
+
+  <footer><span class="footer-brand">RETRO<span>PLAY</span></span><span>Projeto independente · Conteúdo autorizado</span><span id="catalogVersion">Catálogo —</span><span id="year"></span></footer>
+
+  <dialog id="detailsDialog" class="details-dialog">
+    <button class="close-dialog" id="closeDialog" aria-label="Fechar">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

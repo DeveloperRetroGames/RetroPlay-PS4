@@ -1,0 +1,33 @@
+{
+  "versao": "1.0.0",
+  "atualizacao": "2026-11-02",
+  "nome": "RetroPlay PS4",
+  "jogos": [
+    {
+      "id": "RP0001",
+      "nome": "Homebrew de demonstração",
+      "categoria": "Homebrew",
+      "descricao": "Item demonstrativo. Substitua pelos dados de um homebrew cuja distribuição seja autorizada.",
+      "capa": "",
+      "tamanho": "A definir",
+      "tamanho_mb": null,
+      "versao": "1.0",
+      "atualizado": "2026-11-02",
+      "download": "",
+      "autorizado": true
+    },
+    {
+      "id": "RP0002",
+      "nome": "Utilitário de demonstração",
+      "categoria": "Utilitários",
+      "descricao": "Exemplo de item do catálogo. Adicione uma URL de download própria ou autorizada.",
+      "capa": "",
+      "tamanho": "A definir",
+      "tamanho_mb": null,
+      "versao": "1.0",
+      "atualizado": "2026-11-02",
+      "download": "",
+      "autorizado": true
+    }
+  ]
+}
