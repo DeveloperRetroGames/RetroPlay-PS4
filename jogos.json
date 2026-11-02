@@ -5,15 +5,15 @@
   "jogos": [
     {
       "id": "RP0001",
-      "nome": "Homebrew de demonstração",
+      "nome": "Clicker Heroes",
       "categoria": "Homebrew",
       "descricao": "Item demonstrativo. Substitua pelos dados de um homebrew cuja distribuição seja autorizada.",
-      "capa": "",
-      "tamanho": "A definir",
+      "capa": "https://raw.githubusercontent.com/DeveloperRetroGames/games/main/covers/PS4/Clicker%20Heroes.png",
+      "tamanho": "200MB",
       "tamanho_mb": null,
       "versao": "1.0",
       "atualizado": "2026-11-02",
-      "download": "",
+      "download": "https://archive.org/download/ps-4-clicker-heroes-cusa-05169-02-patch-v-1.11-psgames.by/PS4_Clicker_Heroes_CUSA05169_02_Patch_v1.11_psgames.by.zip",
       "autorizado": true
     },
     {
